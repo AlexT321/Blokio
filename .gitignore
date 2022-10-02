@@ -1,5 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
+
+#keys
+Blokio_Key
+Blokio_Key.pub
 # Logs
 /logs
 *.log
