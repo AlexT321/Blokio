@@ -1,5 +1,5 @@
 <template>
-  <div class="w-20 h-20 bg-slate-600">Hello World</div>
+  <div class="w-20 h-20 bg-slate-600">Hello</div>
 </template>
 
 <script lang="ts">
