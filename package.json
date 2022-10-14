@@ -6,8 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "build:css": "tailwind build -i ./blokio/assets/style.css -o ./blokio/.nuxt/style.css"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "core-js": "^3.25.3",

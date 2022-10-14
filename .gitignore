@@ -2,8 +2,6 @@
 ### Node template
 
 #keys
-Blokio_Key
-Blokio_Key.pub
 # Logs
 /logs
 *.log

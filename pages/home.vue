@@ -1,0 +1,48 @@
+<template>
+  <div class="w-screen h-screen bg-zinc-900 flex justify-between items-center flex-col overflow-hidden">
+    <Header_main/>
+    <div class="h-full w-full flex justify-center items-center flex-row">
+      <Side_menu/>
+      <div class="h-full w-[180vh] bg-zinc-800 flex justify-center items-center flex-col gap-2">
+        <div class=" h-[80vh] w-[160vh] bg-zinc-700">
+          <Message/>
+        </div>
+        <div class=" h-12 w-[160vh] bg-zinc-500 rounded-3xl flex flex-row justify-center items-center pl-5 pr-5 gap-5">
+          <button class="h-12 w-12 text-3xl flex justify-center items-center text-zinc-800 pb-1">+</button>
+          <input  class=" h-12 w-[150vh] pl-1 bg-zinc-500 text-white placeholder:text-zinc-800 placeholder:text-2xl border-none flex justify-center items-center" type="text" placeholder="Message User"/>
+          <button class=" h-8 w-8 rounded-full bg-blue-500 text-white flex justify-center items-center">
+            <svg class=" h-4 w-4 flex justify-center items-start fill-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.3 488.3" xmlns:v="https://vecta.io/nano"><path d="M488.3 142.5v203.1c0 15.7-17 25.5-30.6 17.7l-84.6-48.8v13.9c0 41.8-33.9 75.7-75.7 75.7H75.7C33.9 404.1 0 370.2 0 328.4V159.9c0-41.8 33.9-75.7 75.7-75.7h221.8c41.8 0 75.7 33.9 75.7 75.7v13.9l84.6-48.8c13.5-8 30.5 1.9 30.5 17.5z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <Footer_main/>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+import Header_main from '~/layouts/Header_main.vue';
+import Footer_main from '~/layouts/Footer_main.vue';
+import Side_menu from '~/layouts/Side_menu.vue';
+import Message from '~/components/Home_Components/Message.vue';
+
+export default Vue.extend({
+  name: "Home",
+  components: {
+    Header_main,
+    Footer_main,
+    Side_menu,
+    Message,
+  },
+  head() {
+    return {
+      title: "Blokio/Home",
+    }
+  }
+})
+</script>
+
+<style>
+
+</style>
