@@ -1,14 +1,82 @@
 <template>
-  
+  <div
+    class="w-screen h-screen bg-zinc-900 flex justify-between items-center flex-col overflow-hidden"
+  >
+    <Header_main />
+    <div class="h-full w-full flex justify-center items-center flex-row">
+      <Side_menu />
+      <div
+        class="h-full w-[180vh] bg-zinc-800 flex justify-center items-center flex-col gap-2"
+      >
+        <div
+          class="w-[160vh] h-20 flex flex-row items-center justify-start pl-4 gap-2"
+        >
+          <div class="h-12 w-12 bg-blue-500 flex justify-center items-center">
+            <svg
+              class="h-8 w-8 fill-blue-300"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 472.615 472.615"
+              xmlns:v="https://vecta.io/nano"
+            >
+              <circle cx="236.308" cy="117.504" r="111.537" />
+              <path
+                d="M369 246.306l-5.297-3.493c-28.511 39.583-74.993 65.402-127.395 65.402s-98.894-25.825-127.404-65.416l-4.451 2.942C41.444 288.182 0 360.187 0 441.87v24.779h472.615V441.87c0-81.321-41.077-153.048-103.615-195.564z"
+              />
+            </svg>
+          </div>
+          <button class="h-12 w-32 bg-zinc-500 text-white">Friends</button>
+          <button class="h-12 w-32 bg-zinc-500 text-white">Add Friends</button>
+          <button class="h-12 w-32 bg-zinc-500 text-white">Profile</button>
+        </div>
+        <div class=" hidden">
+          <div
+            class="w-[160vh] h-20 flex flex-row items-center justify-start pl-4 gap-4"
+          >
+            <div class="h-14 w-14 rounded-full bg-white"></div>
+            <input
+              class="rounded-3xl bg-zinc-500 h-14 w-[60vh] text-white placeholder:text-white pl-5 text-lg"
+              placeholder="Search"
+            />
+          </div>
+          <div class="w-[160vh] h-[65vh] flex flex-col pl-16">
+            <div
+              class="h-14 w-44 flex flex-row justify-center items-center gap-3"
+            >
+              <div class="h-10 w-10 rounded-full bg-white"></div>
+              <div class="text-white text-lg">Username</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="w-[160vh] h-[75vh] flex flex-col justify-start pl-4 gap-5">
+            <h1 class="text-white">Add Friend</h1>
+            <input class=" h-14 w-[60vh] bg-zinc-500 placeholder:text-white pl-5" placeholder="Enter Username"/>
+            <button class=" w-52 h-14 bg-blue-500 text-white rounded-2xl">Send Friend Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer_main />
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
+import Header_main from "~/layouts/Header_main.vue";
+import Side_menu from "~/layouts/Side_menu.vue";
+import Footer_main from "~/layouts/Footer_main.vue";
 export default Vue.extend({
-  
-})
+  components: {
+    Header_main,
+    Side_menu,
+    Footer_main,
+  },
+  head() {
+    return {
+      title: "Blokio/Friends",
+    };
+  },
+});
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

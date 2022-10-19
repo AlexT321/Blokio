@@ -1,12 +1,12 @@
 <template>
   <div class="w-screen h-screen bg-zinc-900 flex justify-between items-center flex-col overflow-hidden">
     <Header_main />
-    <div class="h-full w-[140vh] flex flex-col justify-center gap-20">
-      <div class="h-fit w-[100vh] text-7xl text-white">
+    <div class="h-full xl:w-[140vh] w-screen flex flex-col justify-center gap-5 md:gap-20 overflow-auto">
+      <div class="h-fit xl:w-[100vh] w-screen lg:text-[3vw] sm:text-[5vw] text-[10vw] text-white pl-2 xl:pl-0">
         Welcome to Blokio a new chatting website to stay communicated with your
         friends
       </div>
-      <button class="h-20 w-72 bg-gray-500 rounded-2xl text-white text-2xl">Create Account</button>
+      <button class="xl:h-20 xl:w-72 h-16 w-40 bg-gray-500 rounded-2xl text-white text-lg xl:text-2xl ml-3 xl:ml-0">Create Account</button>
     </div>
     <Footer_main />
   </div>
