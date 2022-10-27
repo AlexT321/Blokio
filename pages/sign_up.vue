@@ -1,18 +1,56 @@
 <template>
-  <div class="w-screen h-screen bg-zinc-900 flex justify-center items-center">
-    <div class="h-[75vh] w-[50vh] bg-zinc-600 rounded-[40px] flex items-center flex-col overflow-hidden">
-      <div class="w-[50vh] h-20 bg-blue-500 mb-8"></div>
-      <h1 class="text-5xl text-white underline mb-16">Sign Up</h1>
-      <h2 class="w-[32vh] text-white text-2xl mb-3">Email:</h2>
-      <input class="border-none h-14 w-[32vh] rounded-3xl mb-3" />
-      <h2 class="w-[32vh] text-white text-2xl mb-3">Password:</h2>
-      <input class="border-none h-14 w-[32vh] rounded-3xl mb-3" />
-      <h2 class="w-[32vh] text-white text-2xl mb-3">Confirm Password:</h2>
-      <input class="border-none h-14 w-[32vh] rounded-3xl mb-3" />
-      <div class="text-white text-lg mb-8 cursor-pointer">Already have an account</div>
-      <button class="w-40 h-16 bg-gray-400 rounded-2xl text-white text-lg mb-28 cursor-pointer">Sign Up</button>
-      <div class="w-[50vh] h-8 bg-blue-500 flex justify-center items-center"></div>
-    </div>
+  <div
+    class="w-screen h-screen bg-zinc-900 flex justify-center tiny:items-center overflow-auto"
+  >
+    <form
+      class="h-[75vh] md:w-[50vh] w-[10rem] min-h-[500px] min-w-[270px] bg-zinc-600 rounded-[40px] flex items-center justify-between flex-col overflow-hidden"
+    >
+      <div class="w-full h-20 bg-blue-500"></div>
+      <main
+        class="laptop:h-[90%] laptop:w-[90%] flex justify-center items-center flex-col p-4 laptop:gap-2"
+      >
+        <h1 class="text-[2.5rem] text-white underline mb-2">Sign Up</h1>
+        <div
+          class="h-fit w-[100%] laptop:w-[80%] flex flex-col justify-start items-start"
+        >
+          <h2 class="w-[100%] min-w-[200px] text-white text-lg mb-3">Email:</h2>
+          <input
+            class="border-none h-8 w-[100%] min-w-[200px] rounded-3xl mb-3"
+          />
+        </div>
+        <div
+          class="h-fit w-[100%] laptop:w-[80%] flex flex-col justify-start items-start"
+        >
+          <h2 class="w-[100%] min-w-[200px] text-white text-lg mb-3">
+            Password:
+          </h2>
+          <input
+            class="border-none h-8 w-[100%] min-w-[200px] rounded-3xl mb-3"
+          />
+        </div>
+        <div
+          class="h-fit w-[100%] laptop:w-[80%] flex flex-col justify-start items-start"
+        >
+          <h2 class="w-[100%] min-w-[200px] text-white text-lg mb-3">
+            Confirm Password:
+          </h2>
+          <input
+            class="border-none h-8 w-[100%] min-w-[200px] rounded-3xl mb-3"
+          />
+        </div>
+        <div class="text-white text-sm mb-10 cursor-pointer">
+          Already have an account?
+        </div>
+        <button
+          class="w-32 h-8 bg-gray-400 rounded-2xl text-white text-sm lg:text-lg cursor-pointer"
+        >
+          Sign Up
+        </button>
+      </main>
+      <div
+        class="w-full h-8 bg-blue-500 flex justify-center items-center"
+      ></div>
+    </form>
   </div>
 </template>
 
@@ -22,8 +60,8 @@ export default Vue.extend({
   head() {
     return {
       title: "Blokio/Sign Up",
-    }
-  }
+    };
+  },
 });
 </script>
 

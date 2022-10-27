@@ -8,7 +8,12 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'tiny': {'raw': '(min-height: 640px)'},
+        'laptop': {'raw': '(min-height: 800px) and (min-width: 1024px)'}
+      }
+    }
   },
   plugins: [],
 }

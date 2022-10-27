@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-80 bg-zinc-900 flex justify-start items-center flex-col gap-5 pt-10">
+  <div class="hidden h-full w-80 min-w-[300px] bg-zinc-900 sm:flex justify-start items-center flex-col gap-5 pt-10 p-2">
     <button class=" text-white h-10 w-52 bg-zinc-500 flex justify-start items-center pl-5">Home</button>
     <button class=" text-white h-10 w-52 bg-zinc-500 flex justify-start items-center pl-5">Friends +</button>
     <h1 class=" text-white h-10 w-52 bg-blue-500 flex items-center pl-5 rounded-2xl">Conversations</h1>
