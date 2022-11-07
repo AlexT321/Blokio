@@ -12,11 +12,11 @@
           <h2 class="w-[100%] min-w-[200px] text-white text-lg  mb-3">Password:</h2>
           <input class=" border-none h-8 w-[100%] min-w-[200px] rounded-3xl mb-3"/>
         </div>
-        <div class=" text-white text-sm mb-10 cursor-pointer">Forgot Password?</div>
-        <button class=" w-32 h-8 bg-gray-400 rounded-2xl text-white text-sm lg:text-lg cursor-pointer">Login</button>
+        <div class=" text-white text-sm mb-10 cursor-pointer hover:underline">Forgot Password?</div>
+        <button class=" w-32 h-8 bg-gray-400 rounded-2xl text-white text-sm lg:text-lg cursor-pointer hover:bg-gray-300">Login</button>
       </main>
       <div class="w-full h-8 bg-blue-500 flex justify-center items-center">
-        <div class=" text-white text-sm cursor-pointer">Create an Acoount</div>
+        <div class=" text-white text-sm cursor-pointer hover:underline">Create an Acoount</div>
       </div>
     </form>
   </div>

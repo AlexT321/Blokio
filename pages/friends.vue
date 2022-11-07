@@ -3,13 +3,13 @@
     class="w-screen h-screen bg-zinc-900 flex justify-between items-center flex-col overflow-hidden"
   >
     <Header_main />
-    <div class="h-full w-full flex justify-center items-center flex-row">
+    <div class="h-full w-full flex xl:justify-center justify-center items-center flex-row">
       <Side_menu />
       <div
-        class="h-full w-[180vh] bg-zinc-800 flex justify-center items-center flex-col gap-2"
+        class="h-full w-full bg-zinc-800 flex justify-start tiny:justify-center sm:items-center flex-col gap-2 overflow-auto"
       >
         <div
-          class="w-[160vh] h-20 flex flex-row items-center justify-start pl-4 gap-2"
+          class="relative w-[100%] min-w-[300px] h-20 flex flex-row items-center justify-start pl-4 gap-2"
         >
           <div class="h-12 w-12 bg-blue-500 flex justify-center items-center">
             <svg
@@ -24,34 +24,34 @@
               />
             </svg>
           </div>
-          <button class="h-12 w-32 bg-zinc-500 text-white">Friends</button>
-          <button class="h-12 w-32 bg-zinc-500 text-white">Add Friends</button>
-          <button class="h-12 w-32 bg-zinc-500 text-white">Profile</button>
+          <button class="h-12 w-32 bg-zinc-500 text-white hover:bg-zinc-400">Friends</button>
+          <button class="h-12 w-32 bg-zinc-500 text-white hover:bg-zinc-400">Add Friends</button>
+          <button class="h-12 w-32 bg-zinc-500 text-white hover:bg-zinc-400">Profile</button>
         </div>
-        <div class=" hidden">
+        <div class="w-[100%] min-w-[300px]">
           <div
             class="w-[160vh] h-20 flex flex-row items-center justify-start pl-4 gap-4"
           >
             <div class="h-14 w-14 rounded-full bg-white"></div>
             <input
-              class="rounded-3xl bg-zinc-500 h-14 w-[60vh] text-white placeholder:text-white pl-5 text-lg"
+              class="rounded-3xl bg-zinc-500 h-14 w-[35vw] lg:w-[60vh] min-w-[350px] text-white placeholder:text-white pl-5 text-lg "
               placeholder="Search"
             />
           </div>
           <div class="w-[160vh] h-[65vh] flex flex-col pl-16">
             <div
-              class="h-14 w-44 flex flex-row justify-center items-center gap-3"
+              class="h-14 w-44 flex flex-row justify-start items-center gap-3 pl-1 rounded-xl hover:bg-zinc-700"
             >
               <div class="h-10 w-10 rounded-full bg-white"></div>
               <div class="text-white text-lg">Username</div>
             </div>
           </div>
         </div>
-        <div>
+        <div class="hidden w-[100%] min-w-[300px]">
           <div class="w-[160vh] h-[75vh] flex flex-col justify-start pl-4 gap-5">
             <h1 class="text-white">Add Friend</h1>
-            <input class=" h-14 w-[60vh] bg-zinc-500 placeholder:text-white pl-5" placeholder="Enter Username"/>
-            <button class=" w-52 h-14 bg-blue-500 text-white rounded-2xl">Send Friend Request</button>
+            <input class=" h-14 w-[35vw] lg:w-[60vh] min-w-[350px] bg-zinc-500 placeholder:text-white pl-5" placeholder="Enter Username"/>
+            <button class=" w-52 h-14 bg-blue-500 text-white rounded-2xl hover:bg-blue-400">Send Friend Request</button>
           </div>
         </div>
       </div>

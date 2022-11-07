@@ -38,11 +38,11 @@
             class="border-none h-8 w-[100%] min-w-[200px] rounded-3xl mb-3"
           />
         </div>
-        <div class="text-white text-sm mb-10 cursor-pointer">
+        <div class="text-white text-sm mb-10 cursor-pointer hover:underline">
           Already have an account?
         </div>
         <button
-          class="w-32 h-8 bg-gray-400 rounded-2xl text-white text-sm lg:text-lg cursor-pointer"
+          class="w-32 h-8 bg-gray-400 rounded-2xl text-white text-sm lg:text-lg cursor-pointer hover:bg-gray-300"
         >
           Sign Up
         </button>

@@ -6,7 +6,7 @@
         Welcome to Blokio a new chatting website to stay communicated with your
         friends
       </div>
-      <button class="xl:h-20 xl:w-72 h-16 w-40 bg-gray-500 rounded-2xl text-white text-lg xl:text-2xl ml-3 xl:ml-0">Create Account</button>
+      <button class="xl:h-20 xl:w-72 h-16 w-40 bg-gray-500 rounded-2xl text-white text-lg xl:text-2xl ml-3 xl:ml-0 hover:bg-gray-400">Create Account</button>
     </div>
     <Footer_main />
   </div>
